@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Color fondo y estructura -->
+    <color name="colorBackgroundDark">#0D47A1</color>
+    <color name="colorBackgroundLight">#1976D2</color>
+
+    <!-- Marcadores -->
+    <color name="scores">#FF9800</color>
+
+    <!-- Texto -->
+    <color name="textPrimary">#FFFFFF</color>
+    <color name="textSecondary">#EEEEEE</color>
+
+    <!-- Botones -->
+    <color name="btnPrimary">#1976D2</color>
+    <color name="btnMinus">#FF9800</color>
+</resources>

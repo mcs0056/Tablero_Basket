@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="viewModel"
+            type="com.example.tablero_basket.ScoreViewModel"/>
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="32dp"
+        android:background="@color/colorBackgroundDark">
+
+        <!-- Título Tablero -->
+        <TextView
+            android:id="@+id/txtTituloPrincipal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/titulo"
+            android:textStyle="bold"
+            android:textSize="26sp"
+            android:textColor="@color/textPrimary"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <!-- Título Local -->
+        <TextView
+            android:id="@+id/txtLocal"
+            android:text="@string/local"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@color/textPrimary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txtTituloPrincipal"
+            android:layout_marginTop="20dp"/>
+
+        <!-- Título Visitante -->
+        <TextView
+            android:id="@+id/txtVisitante"
+            android:text="@string/visitante"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@color/textSecondary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txtTituloPrincipal"
+            android:layout_marginTop="20dp"/>
+
+        <!-- Marcador Local -->
+        <TextView
+            android:id="@+id/txtScoreLocal"
+            android:text='@{String.valueOf(viewModel.localScore)}'
+            android:textSize="48sp"
+            android:textStyle="bold"
+            android:textColor="@color/textPrimary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@id/txtLocal"
+            app:layout_constraintTop_toBottomOf="@id/txtLocal"/>
+
+        <!-- Marcador Visitante -->
+        <TextView
+            android:id="@+id/txtScoreVisitante"
+            android:text='@{String.valueOf(viewModel.visitanteScore)}'
+            android:textSize="48sp"
+            android:textStyle="bold"
+            android:textColor="@color/textPrimary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="@id/txtVisitante"
+            app:layout_constraintTop_toBottomOf="@id/txtVisitante"/>
+
+        <!-- VS -->
+        <TextView
+            android:id="@+id/vs"
+            android:text="VS"
+            android:textSize="50sp"
+            android:textStyle="bold"
+            android:textColor="@color/textPrimary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/txtLocal"
+            app:layout_constraintStart_toStartOf="@id/txtLocal"
+            app:layout_constraintEnd_toEndOf="@id/txtVisitante"/>
+
+
+        <!-- Botones Local -->
+        <LinearLayout
+            android:id="@+id/layoutLocalBtns"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@id/txtScoreLocal"
+            app:layout_constraintTop_toBottomOf="@id/txtScoreLocal">
+
+            <Button
+                android:id="@+id/btnLocal1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/btnPrimary"
+                android:textColor="@color/textPrimary"
+                android:text="@string/sumar_uno"/>
+
+            <Button
+                android:id="@+id/btnLocal2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/btnPrimary"
+                android:textColor="@color/textPrimary"
+                android:text="@string/sumar_dos"/>
+
+            <Button
+                android:id="@+id/btnLocal3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/btnPrimary"
+                android:textColor="@color/textPrimary"
+                android:text="@string/sumar_tres"/>
+
+            <Button
+                android:id="@+id/btnLocal4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/btnMinus"
+                android:text="@string/restar_uno"/>
+        </LinearLayout>
+
+        <!-- Botones Visitante -->
+        <LinearLayout
+            android:id="@+id/layoutVisBtns"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="@id/txtScoreVisitante"
+            app:layout_constraintTop_toBottomOf="@id/txtScoreVisitante">
+
+            <Button
+                android:id="@+id/btnVis1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/btnPrimary"
+                android:textColor="@color/textPrimary"
+                android:text="@string/sumar_uno"/>
+
+            <Button
+                android:id="@+id/btnVis2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/btnPrimary"
+                android:textColor="@color/textPrimary"
+                android:text="@string/sumar_dos"/>
+
+            <Button
+                android:id="@+id/btnVis3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/btnPrimary"
+                android:textColor="@color/textPrimary"
+                android:text="@string/sumar_tres"/>
+
+            <Button
+                android:id="@+id/btnVis4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/btnMinus"
+                android:text="@string/restar_uno"/>
+        </LinearLayout>
+
+        <!-- Botón Reset -->
+        <ImageButton
+            android:id="@+id/btnReset"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_reset"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            app:tint="@null"
+            android:contentDescription="@string/reset"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+        <!-- Botón Resultado -->
+        <ImageButton
+            android:id="@+id/btnNext"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_next"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            app:tint="@null"
+            android:contentDescription="@string/resultado"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

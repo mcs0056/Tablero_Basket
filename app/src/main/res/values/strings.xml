@@ -1,0 +1,27 @@
+<resources>
+    <!-- App -->
+    <string name="app_name">Basket Score</string>
+
+    <!-- MainActivity -->
+    <string name="titulo">TABLERO BALONCESTO</string>
+    <string name="local">Local</string>
+    <string name="visitante">Visitante</string>
+
+    <string name="sumar_uno">+1</string>
+    <string name="sumar_dos">+2</string>
+    <string name="sumar_tres">+3</string>
+    <string name="restar_uno">-1</string>
+    <string name="reset">Reiniciar marcador</string>
+    <string name="resultado">Resultados</string>
+
+    <!-- ScoreActivity -->
+    <string name="resultado_default">0 - 0</string>
+    <string name="mensaje_default">Resultado del partido</string>
+    <string name="imgResultado">Imagen Resultado</string>
+    <string name="volver">Volver</string>
+
+    <string name="gana_local">¡Gana el equipo Local!</string>
+    <string name="gana_visitante">¡Gana el equipo Visitante!</string>
+    <string name="empate">¡Empate!</string>
+
+</resources>
