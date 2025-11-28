@@ -73,3 +73,20 @@ La aplicación implementa correctamente la persistencia de datos durante cambios
 
 ### Data Binding
 El proyecto utiliza Data Binding para vincular directamente los datos del ViewModel con la UI, reduciendo el código y mejorando la legibilidad.
+
+### Capturas de pantalla
+
+##Gana Local
+
+<img width="390" height="801" alt="pantalla_Main" src="https://github.com/user-attachments/assets/80c4e276-5a18-46ad-a79a-ab5c10e88244" />
+<img width="391" height="801" alt="local_gana" src="https://github.com/user-attachments/assets/1e348f4e-7e58-4a81-a5a5-76ba9b892019" />
+
+##Gana Visitante
+
+<img width="385" height="800" alt="pantalla_Main_vis" src="https://github.com/user-attachments/assets/a4b7d6b2-d9ef-42fc-b9c4-cd981ae3b145" />
+<img width="384" height="799" alt="vis_gana" src="https://github.com/user-attachments/assets/73c60e7b-b8c8-4de1-bb3e-b055a8e4a026" />
+
+##Empate
+
+<img width="376" height="794" alt="pantalla_Main_empate" src="https://github.com/user-attachments/assets/d17c1a16-bfe6-44d9-a33e-2e697292587b" />
+<img width="372" height="802" alt="empate" src="https://github.com/user-attachments/assets/7ae6572b-fae0-4f23-ac33-f9855a96bf89" />
