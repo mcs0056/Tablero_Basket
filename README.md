@@ -27,19 +27,6 @@ Tablero Basket es una aplicación sencilla e intuitiva que permite registrar los
   - ConstraintLayout
   - Material Design
 
-## Instalación
-
-1. Clona este repositorio:
-```bash
-git clone https://github.com/tu-usuario/tablero-basket.git
-```
-
-2. Abre el proyecto en Android Studio
-
-3. Sincroniza el proyecto con Gradle
-
-4. Ejecuta la aplicación en un emulador o dispositivo físico
-
 ## Estructura del proyecto
 
 ```
